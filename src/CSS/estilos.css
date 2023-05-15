@@ -5,7 +5,7 @@ body {
 	/* background-color: #5e5b5bad; */
 	color: #000000;
 	transition: 1s ease-in-out;
-	background-image: url(/src/imagens/digital-art-pixel-art-pixels-pixelated-wallpaper.jpg);
+	background-image: url(./src/imagens/digital-art-pixel-art-pixels-pixelated-wallpaper.jpg);
 	background-repeat:round;
 	
 }
