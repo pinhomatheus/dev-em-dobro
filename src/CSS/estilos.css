@@ -2,25 +2,40 @@ body {
 	font-family: 'Poppins', sans-serif;
 	max-width: 1280px;
 	margin: 0 auto;
-	background-color: #5e5b5bad;
-	color: #333333;
+	/* background-color: #5e5b5bad; */
+	color: #000000;
+	transition: 1s ease-in-out;
+	background-image: url(/src/imagens/digital-art-pixel-art-pixels-pixelated-wallpaper.jpg);
+	background-repeat:round;
+	
 }
 
-body.modo-escuro {
-	background-color: #212121;
+ body.modo-escuro { 
+	/* background-color: #212121; */
+	transition: 1s ease-in-out;
 	color: #f5f5f5;
-}
+	background-image: url(/src/imagens/1920x1200-sunrise.jpg);
+	background-repeat:round;
+ }
 
+ /* --DISTÂNCIA AS LOGOS ATÉ OS CARDS-- */
 header {
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-between;
 	padding: 25px;
 }
 
+/* TAMANHO DOS BOTÕES, POKEBOLA E SOL */
 header .logo,
 header .imagem-botao {
+	background: none;
 	width: 30px;
 	transition: 0.2s ease-in-out;
+}
+
+header .pokemon-logo{
+	background: none;
+	width: 100px;
 }
 
 header #botao-alterar-tema {
@@ -28,9 +43,14 @@ header #botao-alterar-tema {
 	border: none;
 }
 
-header .logo:hover,
-header .imagem-botao:hover,
+header .pokemon-logo:hover,
 main .cartao-pokemon:hover {
+	transform: scale(1.05);
+	cursor: default;
+}
+
+header .logo:hover,
+header .imagem-botao:hover{
 	transform: scale(1.05);
 	cursor: pointer;
 }
@@ -42,20 +62,21 @@ main {
 main .listagem-pokemon {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
+	gap: 50px;
 	justify-content: center;
+	/* color: green; */
 }
 
 main .cartao-pokemon {
 	background-color: #d8e3ec;
-	width: 200px;
-	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 15px;
-	border-radius: 15px;
-	transition: 0.2s ease-in-out;
+		width: 200px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		border-radius: 15px;
+		transition: 0.2s ease-in-out;
 }
 
 main .cartao-pokemon:hover {
@@ -63,7 +84,7 @@ main .cartao-pokemon:hover {
 }
 
 .modo-escuro .cartao-pokemon {
-	background-color: #a8a8a8;
+	background-color: #b694bb;
 }
 
 main .cartao-pokemon .informacoes {
@@ -112,6 +133,10 @@ main .cartao-pokemon .tipo {
 
 .inseto {
 	background-color: #a6b91a;
+}
+
+.normal{
+	background-color: #88781e;
 }
 
 main .descricao {
